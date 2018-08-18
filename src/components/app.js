@@ -7,6 +7,7 @@ angular.module('video-player')
   this.searchyoutube = youTube.search;
   this.videos = window.exampleVideoData;
   this.dvideo = this.videos[0];
+  this.autoplay = 1;
 
 
   //ES6 scoping, arrow function binds it to the app.
@@ -16,6 +17,15 @@ angular.module('video-player')
 
   this.searchclick = (value) => {
     this.searchyoutube(value, this.render)
+  }
+
+  this.toggleauto = () => {
+    console.log('click');
+    if(this.autoplay === 1) {
+      this.autoplay = 0;
+    } else if (this.autoplay ===0) {
+      this.autoplay = 1;
+    }
   }
 
   this.render = (data) => {
