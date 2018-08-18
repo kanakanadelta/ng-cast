@@ -21,9 +21,9 @@ angular.module('video-player')
 
       this.toggleauto = () => {
         console.log('click');
-        if(this.autoplay === 1) {
+        if (this.autoplay === 1) {
           this.autoplay = 0;
-        } else if (this.autoplay ===0) {
+        } else if (this.autoplay === 0) {
           this.autoplay = 1;
         }
       };
