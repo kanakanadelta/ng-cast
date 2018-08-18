@@ -13,12 +13,10 @@ angular.module('video-player')
         type: 'video',
       }
     }).then(function(data){
-      // if(callback) {
         callback(data);
-      // }
       console.log('Success, data get.', data);
     }).catch(function(data){
-      // console.log('Error', data)
+      console.log('Error', data)
     });
   }
 });

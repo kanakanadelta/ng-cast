@@ -3,8 +3,24 @@
     <iframe class="embed-responsive-item" ng-src="{{'https://www.youtube.com/embed/'+$ctrl.dvideo.id.videoId+'?&autoplay='+$ctrl.autoplay}}" allowFullScreen></iframe>
   </div>
   <div class="video-player-details">
-    <div id="autoplayBtn"><a ng-click="$ctrl.toggleauto()">Toggle Autoplay</a></div>
+    <div id="autoplayBtn">
+      <!-- toggle switch -->
+
+      <!-- toggle switch -->
+      <a ng-click="$ctrl.toggleauto()">
+        <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-play-circle"></span> 
+            Toggle Autoplay
+        </button>
+      </a>
+    </div>
     <h3>{{$ctrl.dvideo.snippet.title}}</h3>
     <div>{{$ctrl.dvideo.snippet.description}}</div>
+  </div>
+  <br>
+  <p>Sponsored Ads:</p>  
+  <div id="ad">
+    <img src="src/assets/ad.png" alt="crad">
+    <img src="src/assets/funiad.jpeg" id="funi" alt="funi">
   </div>
 </div>
